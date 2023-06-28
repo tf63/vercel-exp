@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+    
+  react:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    tty: true
+    volumes:
+      - ./app:/app
+    ports:
+      - 5173:5173
+    command: sh -c "npm install & npm run dev"
