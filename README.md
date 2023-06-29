@@ -39,10 +39,25 @@
 ```
 
 - http://localhost:5173 にアクセスし，Vite の初期ページが表示されることを確認
-  ![](docs/img/vite_init.png)
+
+![](docs/img/vite_init.png)
 
 ### CDのテスト
 - masterの変更は即反映される
+
 ![](docs/img/vercel_cdtest_master.png)
 
 - devの変更はmasterにマージしないと反映されない (masterをデプロイしている)
+
+- react-routerが上手く機能していない
+
+![](docs/img/vercel_route_failed.png)
+
+- app/に`vercel.json`を追加したらうまくいった
+```
+    {
+        "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    }
+```
+
+![](docs/img/vercel_route_success.png)
