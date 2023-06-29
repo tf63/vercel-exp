@@ -5,6 +5,7 @@ const Home = () => {
         <div>
             <div>CD Test</div>
             <div>create dev branch</div>
+            <div>merge dev branch</div>
         </div>
     )
 }

@@ -44,3 +44,5 @@
 ### CDのテスト
 - masterの変更は即反映される
 ![](docs/img/vercel_cdtest_master.png)
+
+- devの変更はmasterにマージしないと反映されない (masterをデプロイしている)
