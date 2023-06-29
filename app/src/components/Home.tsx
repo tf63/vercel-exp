@@ -1,7 +1,12 @@
 // import React from 'react'
 
 const Home = () => {
-    return <div>CD Test</div>
+    return (
+        <div>
+            <div>CD Test</div>
+            <div>create dev branch</div>
+        </div>
+    )
 }
 
 export default Home
