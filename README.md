@@ -40,3 +40,7 @@
 
 - http://localhost:5173 にアクセスし，Vite の初期ページが表示されることを確認
   ![](docs/img/vite_init.png)
+
+### CDのテスト
+- masterの変更は即反映される
+![](docs/img/vercel_cdtest_master.png)
